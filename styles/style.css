@@ -188,3 +188,37 @@
 .table__text:last-child {
   margin-bottom: 0;
 }
+
+.feynman {
+  background-image: url(../images/feynman.png);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 867px 637px;
+  height: 790px;
+  position: relative;
+  padding-top: 100px;
+}
+
+.feynman__title {
+width:648px;
+margin: 0 auto;
+line-height: 1.15;
+font-size: 120px;
+font-size: bold;
+text-align: center;
+}
+.feynman__subtitle {
+  width:fit-content;
+  margin: 70px auto 0;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+.feynman__link {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  position: absolute;
+top: 50%;
+right: 48px;
+}
