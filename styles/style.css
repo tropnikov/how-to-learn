@@ -1,5 +1,9 @@
-* {
+/* * {
   border: 1px solid red;
+} */
+
+/* сброс внешних отступов у body */
+.body_margins_zero {
   margin: 0;
 }
 
@@ -14,6 +18,7 @@
   font-family: "Helvetica Neue", Arial, sans-serif;
   color: #000000;
 }
+
 .logo_place_header {
   position: absolute;
   top: 30px;
@@ -42,8 +47,19 @@
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
-  /* color: #000000; */
   width: 730px;
+}
+
+.header__subtitle {
+  margin: 0;
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+  width: 388px;
+  z-index: 2;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
 }
 
 .header__main-illustration {
@@ -55,23 +71,11 @@
   z-index: 1;
 }
 
-.header__subtitle {
-  position: absolute;
-  left: 64px;
-  bottom: 30px;
-  width: 388px;
-  z-index: 2;
-  line-height: 25px;
-  font-size: 18px;
-  font-weight: normal;
-}
-
 .header__link {
   color: #2f80ed;
   text-decoration: none;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   position: absolute;
   top: 64px;
@@ -80,9 +84,6 @@
   width: 568px;
   background-color: #2f80ed;
 }
-
-/* и элемента с модификатором вида ключ-значение */
-
 
 .description {
   margin-top: 100px;
@@ -94,7 +95,7 @@
   display: flex;
   justify-content: space-between;
   width: 80%;
-  /* min-height: 340px; */
+  min-height: 338px;
 }
 
 .two-columns__brief {
@@ -105,7 +106,6 @@
   font-weight: normal;
   display: flex;
   flex-direction: column;
-  justify-content: stretch;
   color: #2f80ed;
 }
 
@@ -121,13 +121,13 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  /* border: 1px solid red; */
   margin-bottom: 30px;
 }
 
 .two-columns__paragraph:last-child {
   margin: 0;
 }
+
 .two-columns__span-accent {
   line-height: 34px;
   font-size: 24px;
@@ -137,6 +137,7 @@
 .digits {
   padding: 100px 0;
 }
+
 .section-title {
   width: 60%;
   margin: 0 auto 20px;
@@ -146,6 +147,10 @@
   font-weight: bold;
 }
 
+.section-title_theme_dark {
+  color: white;
+}
+
 .section-subtitle {
   width: 60%;
   margin: 0 auto;
@@ -153,6 +158,10 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+}
+
+.section-subtitle_theme_dark {
+  color: white;
 }
 
 .table {
@@ -169,7 +178,15 @@
   margin-top: 60px;
 }
 
+.table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
+}
+
 .table__heading {
+  margin: 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
@@ -189,10 +206,10 @@
   background-position: left bottom;
   background-repeat: no-repeat;
   background-size: 867px 637px;
+  background-color: #f2f2f2;
   height: 790px;
   position: relative;
   padding-top: 100px;
-  background-color:  #f2f2f2;
 }
 
 .feynman__title {
@@ -227,18 +244,6 @@
   overflow: hidden;
   position: relative;
   z-index: -1;
-  /* background-image: url(../images/kaufman-triangle.svg);
-  background-position: top 0 right -210px;
-  background-repeat: no-repeat;
-  background-size: 877px 877px; */
-}
-
-.section-title_theme_dark {
-  color: white;
-}
-
-.section-subtitle_theme_dark {
-  color: white;
 }
 
 .kaufman__triangle {
@@ -250,18 +255,11 @@
   height: 877px;
 }
 
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-}
-
 .footer {
-padding: 60px 0 40px;
-min-height: 350px;
-background-color: #1f1f1f;
-color: white;
+  padding: 60px 0 40px;
+  min-height: 350px;
+  background-color: #1f1f1f;
+  color: white;
 }
 
 .footer__columns {
@@ -278,25 +276,12 @@ color: white;
   flex-direction: column;
   justify-content: space-between;
 }
-.logo_place_footer {
-  width:183px;
-  height:35px;
-}
-
-.footer__author {
-  width: fit-content;
-margin: 18px 0;
-line-height: 25px;
-font-size: 18px;
-font-weight: normal;
-
-}
 
 .footer__column-heading {
+  margin: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
-
 }
 
 .footer__column-links {
@@ -320,6 +305,17 @@ font-weight: normal;
   width: 16px;
   height: 16px;
   margin-right: 10px;
-  vertical-align:baseline;
-  /* margin-top: 10px; */
+}
+
+.logo_place_footer {
+  width: 183px;
+  height: 35px;
+}
+
+.footer__author {
+  width: fit-content;
+  margin: 18px 0;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
 }
