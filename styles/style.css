@@ -228,6 +228,7 @@
   font-size: 36px;
   font-weight: normal;
 }
+
 .feynman__link {
   line-height: 51px;
   font-size: 36px;
@@ -251,6 +252,10 @@
   position: relative;
   z-index: 1;
 }
+
+/* в брифе смутило вот это – "Позиционируйте элемент абсолютно.", поэтому
+сделал через img. Можно ли в принципе поставить треугольник как background-image у секции или
+это не очень хорошая практика? */
 .kaufman__triangle {
   width: 667px;
   height: 877px;
