@@ -71,10 +71,12 @@
 .header__link {
   color: #2f80ed;
   text-decoration: none;
+  transition: opacity 0.25s ease;
 }
 
 .header__link:hover {
-  color: #145ebe;
+  /* color: #145ebe; */
+  opacity:0.75;
 }
 
 .header__square-pic {
@@ -154,7 +156,7 @@
   padding-top: 100px;
 }
 .two-columns_no-min-height {
-  min-height:max-content;
+  min-height: max-content;
 }
 .cards {
   width: 920px;
@@ -164,6 +166,8 @@
   column-gap: 100px;
   row-gap: 60px;
   margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
   /* min-height: 600px; */
 }
 
@@ -201,23 +205,30 @@
 
 .video__frames {
   width: 1050px;
-  margin: 50px auto 0;
+  margin: 0 auto;
   font-size: 0;
+  transform: translateY(50px);
 }
 
 .video__iframe {
   margin-right: 20px;
+  border: none;
 }
 
 .video__iframe:last-child {
   margin-right: 0;
+
 }
 
 .oakley {
-  margin-top: 100px;
+  padding-top: 100px;
+  /* margin-top: -50px; */
   display: flex;
   justify-content: center;
+  background-color: #f2f2f2;
 }
+
+
 
 .section-title {
   width: 60%;
@@ -323,12 +334,76 @@
   color: #2f80ed;
   text-decoration: none;
   transition: transform 0.1s;
+  transition: opacity 0.25s ease;
 }
 
 .feynman__link:hover {
-  color: #145ebe;
+
+  opacity:0.75;
 }
 
+.khan {
+  padding-top: 105px;
+
+}
+.khan__container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.khan__author {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.khan__title {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.khan__quote {
+  width: 790px;
+  margin: 50px auto 36px 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.khan__quote-author {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+}
+.khan__quote-author-subline {
+  margin: 10px 0 68px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+}
+.khan__book-container {
+  width: 620px;
+  height: 608px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.khan__book-pic {
+  width: 620px;
+  /* height: 608px; */
+}
+
+.khan__buy-link {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  text-decoration: none;
+  /* display: inline-block; */
+}
 .kaufman {
   background-color: #1f1f1f;
   padding: 90px 0;
@@ -337,9 +412,20 @@
   z-index: 1;
 }
 
-/* в брифе смутило вот это – "Позиционируйте элемент абсолютно.", поэтому
-сделал через img. Можно ли в принципе поставить треугольник как background-image у секции или
-это не очень хорошая практика? */
+.resources {
+  padding-top: 100px;
+}
+
+.resources__logo-zone {
+  margin: 80px auto 217px;
+  width: 1100px;
+  text-align: center;
+}
+
+.resources__logo {
+  width: 270px;
+  height: 38px;
+}
 .kaufman__triangle {
   width: 667px;
   height: 877px;
@@ -406,6 +492,7 @@
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
+  transition: opacity 0.25s ease;
 }
 
 .footer__column-link:last-child {
@@ -413,7 +500,7 @@
 }
 
 .footer__column-link:hover {
-  color: #2f80ed;
+  opacity:0.75;
 }
 
 .footer__social-icon {
