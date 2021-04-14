@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./pages/index.css">
     <title>Научиться учиться</title>
   </head>
 
@@ -22,7 +22,7 @@
         <p class="header__subtitle">
           Какие современные и эффективные подходы к обучению вы можете
           использовать в своей жизни?
-          <a href="#kaufman-techniques" class="header__link">Узнать &rarr;</a>
+          <a href="#techniques" class="header__link">Узнать &rarr;</a>
         </p>
 
         <img
@@ -63,7 +63,7 @@
           </div>
         </section>
 
-        <section class="techniques">
+        <section id="techniques" class="techniques">
           <h2 class="section-title">Техники обучения</h2>
 
           <h3 class="section-subtitle">Пять практик от Барбары Оакли</h3>
@@ -72,7 +72,7 @@
               <img
                 class="cards__image"
                 src="./images/cards-attention.png"
-                alt=""
+                alt="фотография книги '101 Essays That Will Change The Way You Think'"
               />
               <h4 class="cards__title">Два вида внимания</h4>
               <p class="cards__description">
@@ -85,7 +85,7 @@
               <img
                 class="cards__image"
                 src="./images/cards-recall.png"
-                alt=""
+                alt="фотография статуи задумавшегося мальчика"
               />
               <h4 class="cards__title">Recall</h4>
               <p class="cards__description">
@@ -98,7 +98,7 @@
               <img
                 class="cards__image"
                 src="./images/cards-interliving.png"
-                alt=""
+                alt="фотография Национального мемориала и музея 11 сентября"
               />
 
               <h4 class="cards__title">Интерливинг</h4>
@@ -112,7 +112,7 @@
               <img
                 class="cards__image"
                 src="./images/cards-question.png"
-                alt=""
+                alt="фотография мужчины, стоящего одного в пустом помещении"
               />
 
               <h4 class="cards__title">Вопросы</h4>
@@ -126,7 +126,7 @@
               <img
                 class="cards__image"
                 src="./images/cards-competence.png"
-                alt=""
+                alt="фотография стопки книг, которую держит рука"
               />
 
               <h4 class="cards__title">Иллюзия компетентности</h4>
@@ -167,7 +167,7 @@
         </section>
 
         <section class="oakley">
-          <div class="two-columns two-columns_no-min-height">
+          <div class="two-columns two-columns_height-fit-content">
             <h2 class="two-columns__brief">История Барбары Оакли.</h2>
 
             <div class="two-columns__main-text">
@@ -260,13 +260,14 @@
             </blockquote>
             <cite class="khan__quote-author">Джордж Лукас </cite>
             <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
+
             <div class="khan__book-container">
-            <img src="./images/khan-book.jpg" alt="" class="khan__book-pic"></div>
-            <a href="" class="khan__buy-link">Купить книгу &rarr;</a>
+            <img src="./images/khan-book.jpg" alt="Обложка книги Салмана Хала 'Весь мир — школа. Преобразованное образование'" class="khan__book-pic">
+            <a href="https://www.amazon.com/One-World-Schoolhouse-Education-Reimagined-ebook/dp/B0076DEOII" target="_blank" class="khan__buy-link">Купить книгу &rarr;</a></div>
           </div>
         </section>
 
-        <section id="kaufman-techniques" class="kaufman">
+        <section class="kaufman">
           <h2 class="section-title section-title_theme_dark">
             Принципы обучения
           </h2>
@@ -345,10 +346,10 @@
         <h2 class="section-title">Полезные ресурсы</h2>
         <h3 class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</h3>
         <div class="resources__logo-zone">
-          <img src="./images/logo/resources-arzamas.svg" alt="" class="resources__logo">
-          <img src="./images/logo/resources-n1.svg" alt="" class="resources__logo">
-          <img src="./images/logo/resources-strelka.svg" alt="" class="resources__logo">
-          <img src="./images/logo/resources-polka.svg" alt="" class="resources__logo">
+          <a href="https://arzamas.academy/" target="_blank"><img src="./images/logo/resources-arzamas.svg" alt="Логотип просветительского проекта Арзамас" class="resources__logo"></a>
+          <a href="https://nplus1.ru/" target="_blank"><img src="./images/logo/resources-n1.svg" alt="Логотип научно-популярного изданий N+1" class="resources__logo"></a>
+          <a href="https://strelka.com/" target="_blank"><img src="./images/logo/resources-strelka.svg" alt="Логотип Института медиа, архитектуры и дизайна Стрелка" class="resources__logo"></a>
+          <a href="https://polka.academy/" target="_blank"><img src="./images/logo/resources-polka.svg" alt="Логотип Полка — образовательного проекта о самых важных произведениях русской литературы" class="resources__logo"></a>
         </div>
       </section>
 
