@@ -1,3 +1,6 @@
+* {
+  border: 1px solid red;
+}
 .page {
   min-width: 1100px;
   max-width: 1600px;
@@ -31,6 +34,7 @@
   align-items: center;
   position: relative;
   background-color: #f2f2f2;
+  overflow: hidden;
 }
 
 .header__title {
@@ -70,7 +74,7 @@
 }
 
 .header__link:hover {
-  color:#145ebe;
+  color: #145ebe;
 }
 
 .header__square-pic {
@@ -80,6 +84,19 @@
   height: 568px;
   width: 568px;
   background-color: #2f80ed;
+}
+
+.rotation {
+  animation: rotate 20s infinite linear running;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .description {
@@ -131,8 +148,75 @@
   font-weight: bold;
 }
 
+.techniques {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+.two-columns_no-min-height {
+  min-height:max-content;
+}
+.cards {
+  width: 920px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: repeat(3, 1fr); */
+  column-gap: 100px;
+  row-gap: 60px;
+  margin: 0 auto;
+  /* min-height: 600px; */
+}
+
+.cards__item {
+  width: 100%;
+  text-align: center;
+}
+
+.cards__image {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin: 60px 40px 43px;
+}
+
+.cards__title {
+  margin-bottom: 16px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+.cards__description {
+  margin: 0;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+}
 .digits {
   padding: 100px 0;
+}
+
+.video {
+  padding-top: 100px;
+}
+
+.video__frames {
+  width: 1050px;
+  margin: 50px auto 0;
+  font-size: 0;
+}
+
+.video__iframe {
+  margin-right: 20px;
+}
+
+.video__iframe:last-child {
+  margin-right: 0;
+}
+
+.oakley {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
 }
 
 .section-title {
@@ -238,11 +322,11 @@
   right: 48px;
   color: #2f80ed;
   text-decoration: none;
-  transition: transform .1s;
+  transition: transform 0.1s;
 }
 
 .feynman__link:hover {
-  color:#145ebe;
+  color: #145ebe;
 }
 
 .kaufman {
@@ -329,7 +413,7 @@
 }
 
 .footer__column-link:hover {
-  color:#2f80ed;
+  color: #2f80ed;
 }
 
 .footer__social-icon {
