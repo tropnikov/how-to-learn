@@ -1,6 +1,7 @@
 .video__frames {
   width: 1050px;
   margin: 0 auto;
-  font-size: 0;
   transform: translateY(50px);
+  display: flex;
+  justify-content: center;
 }

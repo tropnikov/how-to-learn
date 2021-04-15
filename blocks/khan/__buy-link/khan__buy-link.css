@@ -3,11 +3,6 @@
   font-size: 30px;
   font-weight: normal;
   text-decoration: none;
-  vertical-align: top;
-  /* position: absolute; */
-  /* transform: translateX(668px); */
-  /* top: 0; */
-  /* left: 668px; */
   color: #2f80ed;
   transition: opacity 0.25s ease;
 }
